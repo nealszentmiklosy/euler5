@@ -1,12 +1,11 @@
 let n = 6;
-function isDivisible(numerator){
-	let d = 2
-	while(d<=3){
-		while(numerator%d==0){
-			d++
-		}
-		return false
-	}
-	return true
+let d = 2;
+while(d<21){
+if(n%d==0){
+	d++
+} else{
+	d=2
+	n++
 }
-console.log(isDivisible(n))
+}
+console.log(n)
